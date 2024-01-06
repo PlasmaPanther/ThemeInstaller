@@ -31,7 +31,7 @@ sudo apt install default-jre default-jdk unzip
   ```
 * Compile with:
   ```
-  javac Main.java ThemeInstallerGUI.java TarExtractor.java ZipExtractor.java
+  javac src/Main.java src/ThemeInstallerGUI.java src/TarExtractor.java src/ZipExtractor.java
   ```
 * And run with the following command:
   ```
@@ -41,7 +41,7 @@ sudo apt install default-jre default-jdk unzip
 
 This program uses `tar` and `unzip` console commands to extract archives. I found it easier to do it this way because to extract zip archives in java I need 3rd party libraries and even if I use said libraries it results with a lot of complicated code.
 
-Also when I experimented with these lbraries they wouldn't extract symlinks properly and icon packs looked broken.
+Also when I experimented with these lbraries they wouldn't extract symlinks properly and icon packs looked broken or just wouldn't extract sub-directories.
 
 The program itself is unfinished and pretty barebones when it comes to front-end and installation process.
 
